@@ -1,48 +1,50 @@
-# True-to-Role, Tailored-to-You: A Survey of Role-Playing LLM Agents
+# More Than a Role: Memory in LLM-based Role-Playing Agents
+
+<p align="center">
+  <img alt="KDD 2026" src="https://img.shields.io/badge/KDD-2026-blue">
+  <img alt="Oral" src="https://img.shields.io/badge/Presentation-Oral-red">
+  <img alt="Survey" src="https://img.shields.io/badge/Type-Survey-green">
+</p>
+
+> **🎉 Accepted to KDD 2026 as an Oral presentation.**
 
 <div align="center">
 
-<img src="teaser.png" alt="Teaser Figure: Static-Dynamic Perspective" width="90%" style="max-width: 1000px; border-radius: 8px;">
+<img src="teaser.png" alt="Teaser Figure: Character-Side and Interaction-Side Memory" width="90%" style="max-width: 1000px; border-radius: 8px;">
 
-**[ [Paper](https://www.google.com/search?q=https://arxiv.org/abs/2501.XXXXX) ]**
+**[ [Paper (PDF)](./More_Than_a_Role_Memory_in_LLM_based_Role_Playing_Agents.pdf) ]**
 
 </div>
 
 ## 📖 Introduction
 
-This is the official repository for the survey paper **"True-to-Role, Tailored-to-You: A Survey of Role-Playing LLM Agents"**.
+This is the official repository for the survey paper **"More Than a Role: Memory in LLM-based Role-Playing Agents"** (**KDD 2026 Oral**).
 
 **Abstract:**
 
-> Role-playing, anchored in sociology and psychology, involves enacting a character within a context. With the emergence of Large Language Models (LLMs), role-playing has become a compelling application. However, existing research often fragments into separate lines of predefined identity and adaptive behavior. To address this, we present a systematic survey from a unified **Static–Dynamic perspective**:
-> * **🎭 Static Persona:** A prescriptive anchor of identity (who the agent is), differentiating it from general assistants.
-> * **🧠 Dynamic Memory:** Experience evolved through interactions, decomposed into **Self Memory** (internal consistency) and **User Memory** (external personalization).
-> 
-> 
+> Believable role-playing agents (RPAs) demand both precise initial alignment and long-term persistence. However, existing research often fragments role alignment and memory management, creating a critical methodological dichotomy: agents either remain rigidly static at the expense of relational growth, or operate as purely reactive systems vulnerable to character drift and relational decay over time. To bridge this gap, this survey introduces a novel, **memory-centric framework** that redefines role persistence. Moving beyond memory as mere auxiliary storage, we position it as the integrative mechanism reconciling character consistency with interactive flexibility. Specifically, we propose a structured taxonomy that categorizes current research into two coupled dimensions:
+> * **🎭 Character-Side Memory (Self):** Preserving agent identity and narrative coherence.
+> * **🧠 Interaction-Side Memory (User):** Facilitating user modeling and relational evolution.
+>
+> Under this unified lens, we systematically analyze state-of-the-art methodologies, architectures, datasets, and evaluation protocols, elucidating how memory bridges static role specifications and dynamic deployment.
 
 This repository maintains a curated list of papers discussed in our survey.
 
 ## 🗂️ Taxonomy & Table of Contents
 
-* [🌟 Surveys & Foundations](https://www.google.com/search?q=%23-surveys--foundations)
-* [🎭 Static Persona (The Anchor)](https://www.google.com/search?q=%23-static-persona)
-* [Persona Construction](https://www.google.com/search?q=%23persona-construction-data--profiling)
-* [Persona Alignment](https://www.google.com/search?q=%23persona-alignment)
-* [Persona Evaluation](https://www.google.com/search?q=%23persona-evaluation)
-
-
-* [🧠 Dynamic Memory (The Evolution)](https://www.google.com/search?q=%23-dynamic-memory)
-* [Structure & Storage](https://www.google.com/search?q=%23memory-structure--storage)
-* [Evolution (Reflection & Maintenance)](https://www.google.com/search?q=%23memory-evolution)
-* [Memory Alignment (Personalization)](https://www.google.com/search?q=%23memory-alignment-personalization)
-
-
-* [🤝 Intersection: Persona-Memory Coordination](https://www.google.com/search?q=%23-intersection-persona-memory-coordination)
-* [System Design](https://www.google.com/search?q=%23system-design)
-* [Applications (Simulation, Companionship, Training)](https://www.google.com/search?q=%23applications)
-
-
-* [⚖️ General Evaluation & Benchmarks](https://www.google.com/search?q=%23-general-evaluation--benchmarks)
+* [🌟 Surveys & Foundations](#-surveys--foundations)
+* [🎭 Character-Side Memory](#-character-side-memory)
+  * [Persona Construction](#persona-construction-data--profiling)
+  * [Persona Alignment](#persona-alignment)
+  * [Persona Evaluation](#persona-evaluation)
+* [🧠 Interaction-Side Memory](#-interaction-side-memory)
+  * [Structure & Storage](#memory-structure--storage)
+  * [Evolution (Reflection & Maintenance)](#memory-evolution)
+  * [Memory Alignment (Personalization)](#memory-alignment-personalization)
+* [🤝 Intersection: Persona-Memory Coordination](#-intersection-persona-memory-coordination)
+  * [System Design](#system-design)
+  * [Applications](#applications)
+* [⚖️ General Evaluation & Benchmarks](#️-general-evaluation--benchmarks)
 
 ---
 
@@ -69,7 +71,7 @@ This repository maintains a curated list of papers discussed in our survey.
 
 ---
 
-## 🎭 Static Persona
+## 🎭 Character-Side Memory
 
 ### Persona Construction (Data & Profiling)
 
@@ -150,11 +152,11 @@ This repository maintains a curated list of papers discussed in our survey.
 
 ---
 
-## 🧠 Dynamic Memory
+## 🧠 Interaction-Side Memory
 
 <div align="center">
 
-<img src="memory.png" alt="Dynamic Memory Framework" width="90%" style="max-width: 1000px; border-radius: 8px;">
+<img src="memory.png" alt="Memory Lifecycle in Role-Playing Agents" width="90%" style="max-width: 1000px; border-radius: 8px;">
 
 </div>
 
@@ -316,11 +318,11 @@ This repository maintains a curated list of papers discussed in our survey.
 If you find this survey useful for your research, please cite:
 
 ```bibtex
-@article{Wu2025Survey,
-  title={True-to-Role, Tailored-to-You: A Survey of Role-Playing LLM Agents},
-  author={},
-  journal={arXiv preprint arXiv:25XX.XXXXX},
-  year={2025}
+@inproceedings{Wu2026MoreThanARole,
+  title     = {More Than a Role: Memory in LLM-based Role-Playing Agents},
+  author    = {Wu, Shuchen and Jiang, Zhishu and Yang, Jiaye and Shen, Xin and Liu, Haibo and Wan, Yichen and Miao, Chenxi and Qi, Guanqiang and Dai, Tingzhi and Zhang, Jiarui and Xu, Luodong and Liang, Jiahui and Li, Weikang and Li, Yang and Huang, Jizhou},
+  booktitle = {Proceedings of the 32nd ACM SIGKDD Conference on Knowledge Discovery and Data Mining (KDD)},
+  year      = {2026},
+  note      = {Oral}
 }
-
 ```
